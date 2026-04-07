@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   const logos = [
     "Jito",
@@ -46,7 +48,7 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <a href="/threat-assessment" className="btn-primary">
+            <Link href="/threat-assessment" className="btn-primary">
               Get Your Free Threat Assessment
               <svg
                 width="16"
@@ -63,10 +65,10 @@ export default function Hero() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
-            <a href="/how-it-works" className="btn-secondary">
+            </Link>
+            <Link href="/how-it-works" className="btn-secondary">
               See How It Works
-            </a>
+            </Link>
           </div>
         </div>
 

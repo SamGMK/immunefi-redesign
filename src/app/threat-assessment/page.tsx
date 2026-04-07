@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -48,7 +49,7 @@ export default function ThreatAssessment() {
         </div>
 
         <div className="relative z-10 mx-auto max-w-3xl px-6 py-16 lg:px-8">
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2 text-sm text-gray-500 transition-colors hover:text-white"
           >
@@ -62,7 +63,7 @@ export default function ThreatAssessment() {
               />
             </svg>
             Back to Home
-          </a>
+          </Link>
 
           <div className="mt-10 text-center">
             <span className="text-xs font-medium uppercase tracking-[0.2em] text-pink">
@@ -114,7 +115,7 @@ export default function ThreatAssessment() {
                 <span className="font-medium text-white">{email}</span> within
                 48 hours.
               </p>
-              <a
+              <Link
                 href="/"
                 className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-pink transition-colors hover:text-pink-light"
               >
@@ -128,7 +129,7 @@ export default function ThreatAssessment() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="mt-12">

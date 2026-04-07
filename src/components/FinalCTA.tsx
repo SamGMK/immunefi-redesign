@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function FinalCTA() {
   return (
     <section className="ascii-bg grid-overlay relative overflow-hidden border-t border-white/5 bg-black py-32">
@@ -16,7 +18,7 @@ export default function FinalCTA() {
           </h2>
 
           <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <a href="/threat-assessment" className="btn-primary">
+            <Link href="/threat-assessment" className="btn-primary">
               Get Your Free Threat Assessment
               <svg
                 width="16"
@@ -33,10 +35,10 @@ export default function FinalCTA() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
-            <a href="/how-it-works" className="btn-secondary">
+            </Link>
+            <Link href="/how-it-works" className="btn-secondary">
               See How It Works
-            </a>
+            </Link>
           </div>
         </div>
       </div>

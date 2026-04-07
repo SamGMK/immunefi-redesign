@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -196,7 +197,7 @@ export default function HowItWorks() {
             </p>
 
             {/* Back link */}
-            <a
+            <Link
               href="/"
               className="mt-8 inline-flex items-center gap-2 text-sm text-gray-500 transition-colors hover:text-white"
             >
@@ -210,7 +211,7 @@ export default function HowItWorks() {
                 />
               </svg>
               Back to Home
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -354,7 +355,7 @@ export default function HowItWorks() {
                       <p className="mt-4 flex-1 text-sm leading-relaxed text-gray-400">
                         {product.pricing}
                       </p>
-                      <a
+                      <Link
                         href={product.href}
                         className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-pink transition-colors hover:text-pink-light"
                       >
@@ -373,7 +374,7 @@ export default function HowItWorks() {
                             strokeLinejoin="round"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -610,7 +611,7 @@ export default function HowItWorks() {
               right security stack for your protocol.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <a href="/threat-assessment" className="btn-primary">
+              <Link href="/threat-assessment" className="btn-primary">
                 Get Your Free Threat Assessment
                 <svg
                   width="16"
@@ -627,10 +628,10 @@ export default function HowItWorks() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </a>
-              <a href="/bug-bounties" className="btn-secondary">
+              </Link>
+              <Link href="/bug-bounties" className="btn-secondary">
                 Talk to Our Team
-              </a>
+              </Link>
             </div>
           </div>
         </section>

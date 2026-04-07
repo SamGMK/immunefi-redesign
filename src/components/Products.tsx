@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const products = [
   {
@@ -162,7 +163,7 @@ export default function Products() {
               </ul>
 
               <div className="mt-10">
-                <a
+                <Link
                   href={active.ctaHref}
                   className={`inline-flex items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold transition-all ${
                     activeTab === 0
@@ -180,7 +181,7 @@ export default function Products() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

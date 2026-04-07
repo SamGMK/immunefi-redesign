@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 interface ServiceFormProps {
   service: string;
@@ -35,7 +36,7 @@ export default function ServiceForm({ service, ctaLabel }: ServiceFormProps) {
           Thanks for your interest in {service}. Our team will review your
           details and reach out within 24 hours.
         </p>
-        <a
+        <Link
           href="/"
           className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-pink transition-colors hover:text-pink-light"
         >
@@ -49,7 +50,7 @@ export default function ServiceForm({ service, ctaLabel }: ServiceFormProps) {
               strokeLinejoin="round"
             />
           </svg>
-        </a>
+        </Link>
       </div>
     );
   }

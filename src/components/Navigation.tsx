@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function Navigation() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <svg
               width="28"
               height="28"
@@ -24,7 +25,7 @@ export default function Navigation() {
               />
             </svg>
             <span className="text-lg font-bold tracking-tight">immunefi</span>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden items-center gap-8 md:flex">

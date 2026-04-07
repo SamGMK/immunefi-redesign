@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ServiceForm from "@/components/ServiceForm";
@@ -29,7 +30,7 @@ export default function SecurityAudits() {
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
             {/* Left — Info */}
             <div>
-              <a
+              <Link
                 href="/"
                 className="inline-flex items-center gap-2 text-sm text-gray-500 transition-colors hover:text-white"
               >
@@ -43,7 +44,7 @@ export default function SecurityAudits() {
                   />
                 </svg>
                 Back to Home
-              </a>
+              </Link>
 
               <div className="mt-8 flex items-center gap-3">
                 <span className="font-mono text-sm text-gray-600">02</span>

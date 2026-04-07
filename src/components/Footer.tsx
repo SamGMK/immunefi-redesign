@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/5 bg-black py-16">
@@ -5,7 +7,7 @@ export default function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <a href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <svg
                 width="24"
                 height="24"
@@ -19,7 +21,7 @@ export default function Footer() {
                 />
               </svg>
               <span className="text-base font-bold">immunefi</span>
-            </a>
+            </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-gray-500">
               The leading Web3 security platform. Protecting protocols from
               exploits with bug bounties, audits, and continuous security.
